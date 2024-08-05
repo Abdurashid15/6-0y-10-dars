@@ -1,6 +1,6 @@
 :root {
     --background-color: #ffffff;
-    --text-color: #333333;
+    --text-color: #222222;
     --highlight-color: #FF6700;
     --card-background: #f9f9f9;
     --button-background: #FF6700;
@@ -9,7 +9,7 @@
 }
 
 body.dark-mode {
-    --background-color: #333333;
+    --background-color: #222222;
     --text-color: #ffffff;
     --highlight-color: #FF6700;
     --card-background: #444444;
@@ -69,7 +69,8 @@ body {
     align-items: center;
 }
 
-.auth-buttons ,.auth-buttons a {
+.auth-buttons,
+.auth-buttons a {
     gap: 15px;
     color: #FF6700;
 }
