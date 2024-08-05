@@ -19,6 +19,7 @@ function App() {
   const [language, setLanguage] = useState('en');
   const [t, setT] = useState(translations[language]);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     setT(translations[language]);
@@ -31,11 +32,11 @@ function App() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-  const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = () => {
     setSearchQuery('')
   };
+
   return (
     <div className="container">
       <header className="header">
@@ -62,8 +63,6 @@ function App() {
         </select>
         <button className="mode-toggle" onClick={toggleDarkMode}>
           {isDarkMode ? <img src={sun} alt="" /> : <img src={moon} alt="" />}
-
-
         </button>
       </header>
 
@@ -83,7 +82,6 @@ function App() {
               <img src={search} alt="" />
             </button>
           </div>
-
           <img src={hero} alt="" className="hero" />
           <div className="features">
             {t.features.map((feature, index) => (
@@ -118,25 +116,21 @@ function App() {
           <img src={img2} alt={t.vegetables} />
           <p>{t.vegetables}</p>
           <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-
         </div>
         <div className="category">
           <img src={img3} alt={t.spices} />
           <p>{t.spices}</p>
           <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-
         </div>
         <div className="category">
           <img src={img4} alt={t.honey} />
           <p>{t.honey}</p>
           <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-
         </div>
         <div className="category">
           <img src={img5} alt={t.flour} />
           <p>{t.flour}</p>
           <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-
         </div>
       </section>
     </div>
