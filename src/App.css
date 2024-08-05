@@ -1,0 +1,248 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --highlight-color: #FF6700;
+    --card-background: #f9f9f9;
+    --button-background: #FF6700;
+    --button-text-color: #ffffff;
+    --border-color: #cccccc;
+}
+
+body.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --highlight-color: #FF6700;
+    --card-background: #444444;
+    --button-background: #FF6700;
+    --button-text-color: #ffffff;
+    --border-color: #555555;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header,
+.nav a,
+.auth-buttons a,
+.auth-buttons button,
+.search-bar input,
+.search-bar button,
+.feature,
+.product-card,
+.category {
+    color: var(--text-color);
+}
+
+.header,
+.nav a,
+.auth-buttons a {
+    color: var(--text-color);
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons ,.auth-buttons a {
+    gap: 15px;
+    color: #FF6700;
+}
+
+.language-select {
+    background-color: #FF6700;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    color: var(--background-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons button {
+    background-color: #FF6700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.promo-section {
+    width: 50%;
+    position: relative;
+}
+
+.promo-section h1 {
+    font-size: 5em !important;
+}
+
+.promo-section p {
+    width: 600px;
+    font-size: 1.5em;
+
+}
+
+.promo-section img.hero {
+    position: absolute;
+    top: -120px;
+    left: 280px;
+    z-index: -1;
+}
+
+.promo-section h1 {
+    font-size: 48px;
+}
+
+.highlight {
+    color: #FF6700;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    outline-color: #ccc;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #FF6700;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.features {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+
+
+.feature {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.feature span {
+    font-size: 18px;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.product-card {
+    margin-left: auto;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgba(243, 129, 96, 5%);
+}
+
+.product-card img {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.categories-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.category {
+    width: 15%;
+}
+
+.category p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.category span {
+    text-align: justify;
+    font-size: 18px;
+}
+
+nav a {
+    border: none !important;
+    transition: all 0.5s ease;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: #FF6700;
+    border-bottom: 1px solid #FF6700 !important;
+}
+
+.auth-buttons a {
+    border: none;
+}
+
+.mode-toggle {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.mode-toggle img {
+    width: 20px;
+    height: 20px;
+}
